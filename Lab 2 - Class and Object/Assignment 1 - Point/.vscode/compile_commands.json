@@ -1,6 +1,0 @@
-[
-{
-  "directory": "/Users/tang/Code/CPP/OOP/Lab 2 - Class and Object/Assignment 1 - Point",
-  "arguments": ["/opt/homebrew/opt/llvm/bin/clang", "-c", "-Qunused-arguments", "-std=c++2b", "-o", "build/.objs/Assignment 1 - Point/macosx/arm64/src/main.cpp.o", "src/main.cpp"],
-  "file": "src/main.cpp"
-}]
