@@ -3,7 +3,6 @@ set_languages("c++2b")
 
 target("Lab 1 - Basic Knowledge")
     set_kind("binary")
-    add_headerfiles("src/*.h")
     add_files("src/*.cpp")
 
 --

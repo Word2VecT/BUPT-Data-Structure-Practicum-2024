@@ -3,7 +3,6 @@ set_languages("c++2b")
 
 target("Assignment 1 - Point")
     set_kind("binary")
-    add_headerfiles("src/*.h")
     add_files("src/*.cpp")
 
 --
