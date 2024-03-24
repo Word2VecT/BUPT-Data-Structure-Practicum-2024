@@ -7,10 +7,12 @@
 
 Point::Point(int coord_x, int coord_y) : coord_x(coord_x), coord_y(coord_y) {
     std::cout << "Class Point constructor" << std::endl;
+    (void)getchar();
 }
 
 Point::~Point() {
     std::cout << "Class Point destructor" << std::endl;
+    (void)getchar();
 }
 
 int Point::getX() const {
@@ -27,10 +29,12 @@ double Point::distance (const Point& other) const {
 
 Circle::Circle(const CircleParams& parameter) : center(parameter.center_x, parameter.center_y), radius(parameter.radius) {
     std::cout << "Class Circle constructor" << std::endl;
+    (void)getchar();
 }
 
 Circle::~Circle() {
     std::cout << "Class Circle destructor" << std::endl;
+    (void)getchar();
 }
 
 Point Circle::getCenter() const {
