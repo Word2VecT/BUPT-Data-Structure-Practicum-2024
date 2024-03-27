@@ -6,8 +6,8 @@
 class Shape {
 public:
   Shape();
-  ~Shape();
-  double area();
+  virtual ~Shape();
+  [[nodiscard]] virtual double area() const = 0;
 };
 
 class Circle : public Shape {
@@ -16,8 +16,8 @@ private:
 
 public:
   explicit Circle(double radius);
-  ~Circle();
-  double area() const;
+  ~Circle() override;
+  [[nodiscard]] double area() const override;
 };
 
 class Rectangle : public Shape {
@@ -27,14 +27,14 @@ private:
 
 public:
   Rectangle(double width, double height);
-  ~Rectangle();
-  double area() const;
+  ~Rectangle() override;
+  [[nodiscard]] double area() const override;
 };
 
 class Square : public Rectangle {
 public:
   explicit Square(double side);
-  ~Square();
+  ~Square() override;
 };
 
 #endif
